@@ -3,7 +3,7 @@
  * Date created: 1/31/2022
  * Last Edited by: NA
  * Last edited: NA
- * Discription: Apple despawn logic
+ * Description: Apple despawn logic
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -26,6 +26,10 @@ public class Apple : MonoBehaviour
         if(transform.position.y<bottomY)
         {
             Destroy(this.gameObject);
+
+            GameObject gm = GameObject.Find("GameManager");
+            ApplePicker aScript = Camera.main.GetComponent<ApplePicker>();
+            aScript.AppleDestroyed();
         }
     }
 }

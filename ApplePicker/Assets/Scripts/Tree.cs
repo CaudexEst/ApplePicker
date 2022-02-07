@@ -3,7 +3,7 @@
  * Date created: 1/31/2022
  * Last Edited by: NA
  * Last edited: NA
- * Discription: Controls tree movement and apple spawning
+ * Description: Controls tree movement and apple spawning
  */
  
 using System.Collections;
